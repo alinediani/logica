@@ -14,7 +14,7 @@ nome2=rs.question('Digite o nome do segundo jogador')
 numeros1=[];
 numeros2=[];
 iguais=[];
-for(var c=0;c<=3;c++){
+for(var c=0;c<5;c++){
     numeros1[c]=rs.questionInt(nome1+' Digite um número')
     numeros2[c]=rs.questionInt(nome2+' Digite um número')
 }
@@ -22,10 +22,12 @@ console.log(nome1)
 console.log(numeros1)
 console.log(nome2)
 console.log(numeros2)
-for(var i=0;i<=3;i++){
-    numeros1.toString();
-    if(numeros1.includes(numeros2[i])){
-        iguais.push(numeros2[i])
+for(var i=0;i<5;i++){
+    numeros2.toString();
+    if(numeros2.includes(numeros1[i])){
+       
+    }else{
+        iguais.push(numeros1[i])
     }
 }
 console.log(iguais)
