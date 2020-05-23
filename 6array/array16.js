@@ -5,5 +5,10 @@ O algoritmo imprime
 Palavra valida
 Utilize o método startsWith()*/
 var rs=require('readline-sync')
-frase=rs.question('Digite uma frase: ')
+frase=rs.question('Digite um serviço: ')
+if(frase.startsWith('Google')){
+    console.log('Palavra válida')
+}else{
+    console.log('Não conheço o serviço')
+}
 
