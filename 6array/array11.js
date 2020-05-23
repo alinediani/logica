@@ -6,13 +6,11 @@ Se não dizer que a palavra está certa.
 Utilize o método includes()*/
 var rs=require('readline-sync')
 var palavra=rs.question('Digite uma palavra')
-for(var c=0;c<palavra.length;c++){
+if(palavra.includes('p')||palavra.includes(('b'))){
+    for(var c=0;c<palavra.length;c++){
     if(palavra[c]=='p'||palavra[c]=='b'){
-        if(palavra[c-1]=='m'||palavra[c-1]=='n'){
-        if(palavra[c-1]=='m'){
-            console.log('A palavra está certa')
-        }else{
+        if(palavra[c-1]=='n'){
             console.log('A palavra está errada: antes de p ou b é m')
-        }}else{}
-    }else{}
-}
+        }
+    else{}}else{}
+}}else{ console.log('A palavra está certa')}
