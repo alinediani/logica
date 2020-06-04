@@ -18,10 +18,6 @@ for(var c=0;c<=10;c++){
     numeros1[c]=rs.questionInt(nome1+' Digite um número')
     numeros2[c]=rs.questionInt(nome2+' Digite um número')
 }
-console.log(nome1)
-console.log(numeros1)
-console.log(nome2)
-console.log(numeros2)
 for(var c=0;c<=10;c++){
     for(var d=0;d<=10;d++){
         if(numeros1[d]==numeros2[c]){
