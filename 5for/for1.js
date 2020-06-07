@@ -11,20 +11,20 @@ console.log(nome.charAt(1))
 O algoritmo imprime:
 > o
 > i*/
-var palavra,a
+var palavra,palavraSeparada
 var rs=require('readline-sync')
 
-a= rs.question('Digite uma palavra: ')
-var palavra = a.split('')
-for (var i=0;i<a.length; i++){
+palavra= rs.question('Digite uma palavra: ')
+var palavraSeparada = palavra.split('')
+for (var i=0;i<palavra.length; i++){
 
-  if(a.charAt(i)=== 'a'){
+  if(palavra.charAt(i)=== 'a'){
         
-        palavra[i] = a.charAt(i).toUpperCase()
+        palavraSeparada[i] = palavra.charAt(i).toUpperCase()
 
         
 
     }
   }
   
-  console.log(palavra.join(''))
+  console.log(palavraSeparada.join(''))
