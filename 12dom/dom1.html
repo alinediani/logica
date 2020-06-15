@@ -1,0 +1,20 @@
+<!--
+(OBRIGATÓRIO) Crie  uma  página  HTML  com  um  cabeçalho  h1  e  um  botão.  Ao  clicar  no  botão,  altere  o  texto  do cabeçalho para “A mágica continua!”.-->
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="cabecalho">Atividade</h1>
+	<button onclick="fazMagica()">Faz magica</button>
+	<hr>
+	<script>
+		function fazMagica() {
+			var h1 = document.getElementById('cabecalho')
+			console.log(h1)
+			var frase = prompt('Escreva uma frase para a mágica continuar:')
+			h1.innerHTML = frase
+		}
+	</script>
+</body>
+</html>

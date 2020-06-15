@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            var teste = true;
+            while (teste) {
+                var idade = prompt('Favor informar a idade:');
+                if (idade == null) {
+                    alert('Insira um valor');
+                }
+                else if (idade != null) {
+                    if (idade == '') {
+                        alert('Insira um valor válido');
+                    }
+                    else {
+                        teste = false;
+                        if (idade < 18) {
+                            window.location = "https://www.mundobita.com.br/";
+                        }
+                        else {
+                            window.location = "http://www.pudim.com.br/";
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+    </html>

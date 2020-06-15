@@ -6,9 +6,9 @@ function frase(){
     axios.get('https://breaking-bad-quotes.herokuapp.com/v1/quotes')
     .then(function(response){
        console.log("Frase: ")
-       console.log(response.data.quote)
+       console.log(response.data[0].quote)
        console.log("Autor: ")
-       console.log(response.data.author)
+       console.log(response.data[0].author)
         
 
     })

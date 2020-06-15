@@ -12,8 +12,8 @@ var ep=rs.question('Escolha um episodio: ')
 function episodio(){
     axios.get('https://www.breakingbadapi.com/api/episodes/'+ep)
     .then(function(response){
-        console.log(response.data.characters)
-       console.log(response.data.season)
+        console.log(response.data[0].characters)
+       console.log(response.data[0].season)
 
     })
     .catch(function(error){
