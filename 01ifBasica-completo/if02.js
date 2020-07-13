@@ -1,10 +1,11 @@
 /*Faça um programa que receba um número via teclado e verifique se este número é par
 ou ímpar. */
-var numero
-var rs=require("readline-sync")
-numero=rs.questionInt('Digite um número')
+//var rs=require("readline-sync")
+//numero=rs.questionInt('Digite um número')
+function par(){
+var numero=document.getElementById('n').value
 if(numero%2==0){
-    console.log('Esse número é par')
+    alert('Esse número é par')
 }else{
-    console.log('Esse número é impar')
-}
+    alert('Esse número é impar')
+}}
