@@ -2,30 +2,16 @@ const express=require('express')
 const bp= require('body-parser')
 const app= express();
 const router=express.Router();
+
+const index=require('./routes/index')
+const product=require('./routes/product')
+
 app.use(bp.json());
 app.use(bp.urlencoded({ extended:false}));
 
-const route =router.get('/',(req,res,next)=>{
-    res.status(200).send({
-       title: "Node Store API",
-       version:"0.0.1"
-    });
-});
-const create= router.post('/',(req,res,next)=>{
-    res.status(200).send();
-});
-const put = router.put('/:id',(req,res,next)=>{
-    const id=req.params.id;
-    res.status(200).send({
-        id:id,
-        item: req.body
-    })
-})
-const del= router.delete('/',(req,res,next)=>{
-    res.status(200).send();
-});
-app.use('/',route)
-app.use('/products',create)
-app.use('/products',put)
-app.use('/products',del)
+
+
+app.use('/',index)
+app.use('/products',product)
+
 module.exports=app;
