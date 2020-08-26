@@ -1,0 +1,10 @@
+body {
+  background-color: aquamarine;
+  color: rgb(132, 78, 194);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
